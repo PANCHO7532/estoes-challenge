@@ -1,0 +1,9 @@
+{
+    "httpHost": "::",
+    "httpPort": 3000,
+    "mysqlHost": "127.0.0.1",
+    "mysqlPort": 3306,
+    "mysqlUsername": "yourUsernameHere",
+    "mysqlPassword": "yourPasswordHere",
+    "mysqlDatabaseName": "yourDatabaseHere"
+}

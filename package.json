@@ -1,0 +1,32 @@
+{
+  "name": "estoes-challenge",
+  "version": "1.0.0",
+  "description": "API para Gestion de Proyectos",
+  "main": "app.js",
+  "scripts": {
+    "start": "NODE_ENV=production node app.js",
+    "dev": "NODE_ENV=development node node_modules/nodemon/bin/nodemon --ignore \"*.json\" app.js",
+    "setup": "npm install --save",
+    "setupdev": "npm install --save-dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Francisco Medina",
+    "email": "pancho7532@p7com.net",
+    "url": "https://p7com.net/contact"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@fastify/static": "^7.0.4",
+    "@fastify/swagger": "^8.14.0",
+    "@fastify/swagger-ui": "^4.0.0",
+    "fastify": "^4.28.1",
+    "mysql2": "^3.10.2",
+    "sequelize": "^6.37.3",
+    "swagger-jsdoc": "^6.2.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
