@@ -1,7 +1,7 @@
 {
   "name": "estoes-challenge",
   "version": "1.0.0",
-  "description": "API para Gestion de Proyectos",
+  "description": "Backend API for managing projects ",
   "main": "app.js",
   "scripts": {
     "start": "NODE_ENV=production node app.js",

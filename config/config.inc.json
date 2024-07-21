@@ -5,5 +5,9 @@
     "mysqlPort": 3306,
     "mysqlUsername": "yourUsernameHere",
     "mysqlPassword": "yourPasswordHere",
-    "mysqlDatabaseName": "yourDatabaseHere"
+    "mysqlDatabaseName": "yourDatabaseHere",
+    "swaggerURLs": [
+        { "url": "http://localhost:3000" }
+    ],
+    "swaggerUIPath": "/api-docs"
 }

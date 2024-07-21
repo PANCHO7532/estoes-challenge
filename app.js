@@ -17,9 +17,7 @@ const swaggerOptions = {
             url: packageFile.author.url
         }
     },
-    servers: [
-        { url: "http://localhost:3000" }
-    ],
+    servers: configFile.swaggerURLs,
     tags: [
         { name: "projects", description: "Endpoints for explore, create, modify, delete and assign projects to users." },
         { name: "users", description: "Endpoints used for explore, create, modify and delete users." }
@@ -96,7 +94,7 @@ fastify.register(require("@fastify/swagger"), {
     openapi: swaggerJSDoc({swaggerDefinition: swaggerOptions, apis: ["routes/*.routes.js"]})
 });
 fastify.register(require("@fastify/swagger-ui"), {
-    routePrefix: "/swagger-ui",
+    routePrefix: configFile.swaggerUIPath,
     staticCSP: true,
     uiConfig: {
         /*docExpansion: "full",*/
